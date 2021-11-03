@@ -22,7 +22,6 @@ class CalculadoraTest extends TestCase
     {
         $calculadora = new Calculadora();
         //$this->assertEquals("6",  $calculadora->sumar(3,3));
-        //$this->assertSame($resultado_esperado, $calculadora->sumar($numero1,$numero2));
         $this->assertEquals($resultado_esperado, $calculadora->sumar($numero1,$numero2));
     }
 
@@ -95,9 +94,8 @@ class CalculadoraTest extends TestCase
     public function testGenerarArreglo()
     {
         $calculadora = new Calculadora();
-        //$this->assertContains(1, $calculadora->generarArreglo(),"Error en generar arreglo");
+        //$this->assertContains(7, $calculadora->generarArreglo());
         //$this->assertCount(5, $calculadora->generarArreglo());
-        //$this->assertEmpty( $calculadora->generarArreglo());
         $this->assertNotEmpty( $calculadora->generarArreglo());
     }
 }
