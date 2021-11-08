@@ -37,4 +37,19 @@ class Calculadora
         return $arreglo;
     }
 
+    function capturarEntradasPermutacion()
+    {
+    }
+
+    function calcularPermutacion($n, $r)
+    {
+        $numerador = $this->calcularFactorial($n);
+        $denominador = $this->calcularFactorial($n - $r);
+        return $numerador / $denominador;
+    }
+
+    function calcularFactorial($numero)
+    {
+    }
+
 }
